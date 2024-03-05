@@ -31,6 +31,7 @@ class Post(UserModel):
 
     title = models.CharField(_("title"), max_length=150)
     body = models.TextField(_("body"), max_length = 10000)
+    image = models.ImageField(_("image"), upload_to='post_images', null=True)
     user = models.ForeignKey(
         get_user_model(),
         verbose_name=_('user'),
