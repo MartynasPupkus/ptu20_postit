@@ -33,14 +33,12 @@ services:
     env_file:
       - .env
   nginx:
-   build: ./nginx/
-   image: nginx:ptu20postit
-   container_name: ptu20postit.nginx
-   restart: always
-   ports:
-     - 80:80
-   volumes:
-     - ./ptu20_postit/media:/app/media
-     - ./ptu20_postit/static:/app/static
-
-  
+    build: ./nginx/
+    image: nginx:ptu20postit
+    container_name: ptu20postit.nginx
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./ptu20_postit/media:/app/media
+      - ./ptu20_postit/static:/app/static

@@ -13,7 +13,7 @@ config = {
     "user": os.getenv("POSTGRES_USER", "ptu20"),
     "password": os.getenv("POSTGRES_PASSWORD", ""),
     "host": os.getenv("POSTGRES_HOST", "postgres"),
-    "port": os.getenv("POSTGRES_PORT", "5432")
+    "port": os.getenv("POSTGRES_PORT", "5432"),
 }
 
 # sukonfigūruojame logerį
